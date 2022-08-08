@@ -1,16 +1,18 @@
-import {
-    Injectable
-}
-from '@nestjs/common';
+// import {
+//     Get, Injectable, Post
+// }
+// from '@nestjs/common';
 
-@Injectable() export class AppService {
-    getHello():object {
+// @Injectable() export class AppService {
+//    getHello():object {
 
-        // return 'Hello World!';
-        return {
-            name: 'amita',
-            email: 'amita55@gmail.com'
-        };
+//         // return 'Hello World!';
+//         return {
+//             name: 'amita',
+//             email: 'amita55@gmail.com'
+//         };
 
-    }
-}
+//     }
+
+
+// }
