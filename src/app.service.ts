@@ -4,7 +4,13 @@ import {
 from '@nestjs/common';
 
 @Injectable() export class AppService {
-    getHello():string {
-        return 'Hello World!';
+    getHello():object {
+
+        // return 'Hello World!';
+        return {
+            name: 'amita',
+            email: 'amita55@gmail.com'
+        };
+
     }
 }
