@@ -1,5 +1,5 @@
 import {
-    Controller, Get, Param, Post, Req
+    Controller, Delete, Get, Param, Patch, Post, Req
 }
 from '@nestjs/common';
 import {
@@ -28,7 +28,31 @@ from 'express';
         console.log(req.body);
         return req.body;
     }
-    @Get('/:userId') getUser(@Param() userId:number) {
-        return userId;
+
+    @Patch('/:userId') update(@Req() req:Request) {
+
+        console.log(req.body);
+        return req.body;
     }
+    // @Get('/:userId') getUser(@Param() userId:number) {
+    //     return userId;
+    // }
+    // ////////below 2 lines return same output of above commented code
+    // @Get('/:userId') getUser(@Param() params:{userId:number}) {
+    //     return params;
+    // }
+
+    @Get('/:userId') getUser(@Req() req:Request) {
+        console.log(req.body);
+        return req.body;
+    }
+
+    // @Delete('/:userId') deleteUser(@Param() params:{userId:number}) {
+    //     return params;
+    // }
+    @Delete('/:userId') deleteUser(@Req() req:Request) {
+        console.log(req.body);
+        return req.body;
+    }
+
 }
